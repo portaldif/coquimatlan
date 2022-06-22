@@ -43,8 +43,7 @@ button{
 }
 
 button:hover{
-	background-color: #6a3145;
-	transition: color 300ms;
+	opacity: 0.9;
 
 }
 
@@ -708,6 +707,3 @@ footer .redes-footer .icon-facebook:hover {
 	80% {margin-left: -400%;}
 	100% {margin-left: -400%;}
 }
-
-
-
