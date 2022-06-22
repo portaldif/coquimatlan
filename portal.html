@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+	<title>Portal de Noticias</title>
+
+	<script src="https://kit.fontawesome.com/fa5938459a.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<link rel="icon" href="Imagenes/dif-logo.png">
+
+	<link rel="stylesheet" href="CSS/estilos.css">
+	<link rel="stylesheet" href="CSS/portal.css"> <!--responsive útil-->
+    <link rel="stylesheet" href="cal-fb.css">
+
+
+</head>
+<body>
+
+	<!-- Header + menu -->
+	<header>
+		 <!-- encabezado -->
+		 <div class="header-content">
+		 	<a href="index.html">
+		 		<h1><img class="logo" src="Imagenes/dif-logo.png"></h1>
+		 	</a>
+
+		<div class="menu" id="show-menu">
+			<nav>
+				<ul>
+					<li><a href="index.html"> <i class="fa-solid fa-house-chimney"></i> Inicio</a></li>
+					<li class=menu-selected><a href="portal.html" class="text-menu-selected"><i class="fa-solid fa-newspaper"></i> Portal</a></li>
+					<li><a href="index.html#contacto"> <i class="fa-solid fa-address-book"></i> Contacto</a></li>
+					<li><a href="servicios.html"> <i class="fa-solid fa-screwdriver-wrench"></i> Servicios</a></li>
+					<li><a href="transparencia.html"> <i class="fa-solid fa-eye"></i> Transparencia</a></li>
+				</ul>
+			</nav>
+		</div>
+
+			<div id="ctn-icon-search">
+				<i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+			</div>
+
+		</div>
+
+		<div id="icon-menu">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+
+	</header>
+
+	<!-- div que maneja el buscador -->
+
+	<div id="ctn-bars-search">
+		<input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+	</div>
+
+	<ul id="box-search">
+		<li><a href="detalle-noticia/articulo-01.html"><i class="fa-solid fa-magnifying-glass"></i>Dia Mundial Sin Tabaco</a></li>
+	</ul>
+
+	<div id="cover-ctn-search"></div>
+
+	<!-- Portada -->
+
+	<div class="container-all" id="move-content">
+
+	<div class="portal-container-cover">
+		<div class="container-info-cover">
+
+			<h1>Portal de Noticias</h1>
+
+		</div>
+	</div>
+
+	<div class="container-post">
+
+		<input type="radio" id="TODOS" name="categorias" value="TODOS" checked>
+		<input type="radio" id="Culturales" name="categorias" value="Culturales"> <!--ok-->
+		<input type="radio" id="Deportivas" name="categorias" value="Deportivas"> <!--ok-->
+		<input type="radio" id="Salud" name="categorias" value="Salud"> <!--ok-->
+		<input type="radio" id="Comunidad" name="categorias" value="Comunidad">
+		<input type="radio" id="Sociales" name="categorias" value="Sociales">
+
+        <div class="container-category">
+        	<label for="TODOS">Noticias</label>
+        	<label for="Culturales">Culturales</label>
+        	<label for="Deportivas">Deportivas</label>
+        	<label for="Salud">Salud</label>
+        	<label for="Comunidad">Comunidad</label>
+        	<label for="Sociales">Gestión Social</label>
+        </div>
+        
+		<div class="posts">
+
+			<div class="post" data-category="Culturales">
+
+				<div class="ctn-img"> <!--cont. miniatura del articulo-->
+					<img src="detalle-noticia/Imagenes/articulos/tabaco.jpg" alt="">
+				</div>
+				<h2>Se conmemora el día mundial sin tabaco</h2>
+				<p><span class="mes-noticia-principal">
+
+					<i class="icon-calendario"></i> 31 mayo 2022. Coquimatlán, col.  
+				</span></p>
+
+				<ul class="ctn-tag">
+					<li>Culturales</li>
+
+				</ul>
+				<a href="detalle-noticia/articulo-05.html"><button>Leer más</button></a>
+
+			</div>
+
+			<div class="post" data-category="Deportivas">
+
+				<div class="ctn-img"> <!--cont. miniatura del articulo-->
+					<img src="detalle-noticia/Imagenes/articulos/tabaco.jpg" alt="">
+				</div>
+				<h2>Se conmemora el día mundial sin tabaco</h2>
+				<p><span class="mes-noticia-principal">
+
+					<i class="icon-calendario"></i> 31 mayo 2022. Coquimatlán, col.  
+				</span></p>
+
+				<ul class="ctn-tag">
+					<li>Deportivas</li>
+
+				</ul>
+				<a href="detalle-noticia/articulo-04.html"><button>Leer más</button></a>
+
+			</div>
+
+			<div class="post" data-category="Salud">
+
+				<div class="ctn-img"> <!--cont. miniatura del articulo-->
+					<img src="detalle-noticia/Imagenes/articulos/tabaco.jpg" alt="">
+				</div>
+				<h2>Se conmemora el día mundial sin tabaco</h2>
+				<p><span class="mes-noticia-principal">
+
+					<i class="icon-calendario"></i> 31 mayo 2022. Coquimatlán, col.  
+				</span></p>
+
+				<ul class="ctn-tag">
+					<li>Salud</li>
+
+				</ul>
+				<a href="detalle-noticia/articulo-03.html"><button>Leer más</button></a>
+
+			</div>
+
+			<div class="post" data-category="Comunidad">
+
+				<div class="ctn-img"> <!--cont. miniatura del articulo-->
+					<img src="detalle-noticia/Imagenes/articulos/tabaco.jpg" alt="">
+				</div>
+				<h2>Se conmemora el día mundial sin tabaco</h2>
+				<p><span class="mes-noticia-principal">
+
+					<i class="icon-calendario"></i> 31 mayo 2022. Coquimatlán, col.  
+				</span></p>
+
+				<ul class="ctn-tag">
+					<li>Comunidad</li>
+
+				</ul>
+				<a href="detalle-noticia/articulo-02.html"><button>Leer más</button></a>
+
+			</div>
+
+			<div class="post" data-category="Sociales">
+
+				<div class="ctn-img"> <!--cont. miniatura del articulo-->
+					<img src="detalle-noticia/Imagenes/articulos/tabaco.jpg" alt="">
+				</div>
+				<h2>Se conmemora el día mundial sin tabaco</h2>
+				<p><span class="mes-noticia-principal">
+
+					<i class="icon-calendario"></i> 31 mayo 2022. Coquimatlán, col.  
+				</span></p>
+
+				<ul class="ctn-tag">
+					<li>Gestión Social</li>
+
+				</ul>
+				<a href="detalle-noticia/articulo-01.html"><button>Leer más</button></a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+    <div id="button-up"> <!-- id para utilizarlo en script js -->
+		<i class="fa-solid fa-chevron-up"></i>
+	</div>
+
+    <div class="container-footer">
+    	
+    	<footer>
+    		<div class="logo-footer">
+    			<img alt="Coquimatlán" class="img-fluid" src="Imagenes/dif-logo.png">
+    		</div>
+
+    		<div class="redes-footer">
+    			<a href="https://www.facebook.com/people/DIF-Municipal-Coquimatl%C3%A1n/100076215756413/" target="_blank" rel="noopener noreferrer"><i class="icon-facebook icon-redes-footer"></i></a>
+
+    		</div>
+
+    		<hr>
+    		<h4>Hidalgo S/N, Centro. C.P. 28400, Coquimatlán, Colima, México. Tel. (312) 323 0018</h4>
+    	</footer>
+    </div>
+</div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
