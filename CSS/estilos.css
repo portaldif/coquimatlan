@@ -43,7 +43,8 @@ button{
 }
 
 button:hover{
-	opacity: 0.9;
+	background-color: #6a3145;
+	transition: color 600ms;
 
 }
 
