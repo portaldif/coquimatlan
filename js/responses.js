@@ -88,7 +88,7 @@ function getBotResponse(input) {
         return "<b>[Revisando]...</b> Intente probar con alguna de las siguiente palabras clave: <br><br> <b>horario</b> <br> <b>servicios</b> <br> <b>domicilio</b>"
 
     } else {
-        return "Sin resultados... &#129300   Para ver los comandos, escriba la palabra <b>ayuda</b>"
+        return "Sin resultados... &#129300   Para ver los comandos, escriba la palabra <b>ayuda</b>."
     }
 
 
