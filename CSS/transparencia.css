@@ -43,11 +43,10 @@ button{
 }
 
 button:hover{
-	background-color: #6a3145;
-	transition: color 300ms;
+	background-color: #A32844;
+	transition: color 600ms;
 
 }
-
 .header-content {
 	max-width: 1200px;
 	margin: auto;
