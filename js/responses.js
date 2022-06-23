@@ -15,6 +15,7 @@ function getBotResponse(input) {
         input == "cuando puedo ir" ||
         input == "que horarios maneja" ||
         input == "cuando abren" ||
+        input == "cuando abren dif" ||
         input == "que horarios tiene" ||
         input == "a que horas esta abierto" ||
         input == "cuando abren el dif" ||
@@ -80,6 +81,7 @@ function getBotResponse(input) {
         // ayuda //
     } else if (input == "ayuda" ||
         input == "AYUDA" ||
+        input == "Ayuda" ||
         input == "palabras clave") {
         return "<b>[Revisando]...</b> Intente probar con alguna de las siguiente palabras clave: <br><br> <b>horario</b> <br> <b>servicios</b> <br> <b>domicilio</b>"
 
