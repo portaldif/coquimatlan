@@ -20,6 +20,7 @@ function getBotResponse(input) {
         input == "a que horas esta abierto" ||
         input == "cuando abren el dif" ||
         input == "a que horas abren el dif" ||
+        input == "a que horas abren dif" ||
         input == "a que horas abre el dif") {
         return "DIF Municipal Coquimatlán labora de Lunes a Viernes en un horario normal de 9:00 de la mañana a 3:00 de la tarde.";   
 
