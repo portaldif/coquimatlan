@@ -15,8 +15,12 @@
 	<link rel="icon" href="Imagenes/dif-logo.png">
 
 	<link rel="stylesheet" href="CSS/transparencia.css"> <!--cover visible-->
-    <link rel="stylesheet" href="cal-fb.css">
-    <link rel="stylesheet" href="CSS/accordion.css">
+  <link rel="stylesheet" href="cal-fb.css">
+  <link rel="stylesheet" href="CSS/accordion.css">
+
+  <link rel="stylesheet" href="CSS/chat.css">
+  <link rel="stylesheet" href="CSS/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
@@ -41,6 +45,52 @@
 				</ul>
 			</nav>
 		</div>
+
+								<!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">DIF Coquimatlán está en línea            
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-solid fa-message"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Escribe tu mensaje aquí...">
+                                <p></p>
+                            </div>
+
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa-solid fa-thumbs-up"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                        	<p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div> <!--end-->
+        </div>
+
+    </div>
 
 		<div id="ctn-icon-search">
 			<i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
@@ -83,7 +133,7 @@
 	<div class="container-content">
 		<article>
 
-			<h2 align="center">Transparencia de DIF Municipal de Coquimatlán</h2>
+			<h2 align="center">DIF COQUIMATLÁN</h2>
 
 			<div class="centrar-servicios">
 				<section class="container max-width-sm">
@@ -95,78 +145,60 @@
 					<ul class="cd-accordion cd-accordion--animated margin-top-lg margin-bottom-lg">
     <li class="cd-accordion__item cd-accordion__item--has-children">
       <input class="cd-accordion__input" type="checkbox" name ="group-1" id="group-1">
-      <label class="cd-accordion__label cd-accordion__label--icon-folder" for="group-1"><span>Prueba 1</span></label>
+      <label class="cd-accordion__label cd-accordion__label--icon-folder" for="group-1"><span>2021</span></label>
 
       <ul class="cd-accordion__sub cd-accordion__sub--l1">
         <li class="cd-accordion__item cd-accordion__item--has-children">
           <input class="cd-accordion__input" type="checkbox" name ="sub-group-1" id="sub-group-1">
-          <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-1"><span>Sub Group 1</span></label>
+          <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-1"><span>Subgrupo 1</span></label>
 
           <ul class="cd-accordion__sub cd-accordion__sub--l2">
-            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
-            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
-            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
+            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span> PDF</span></a></li>
+            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>PDF</span></a></li>
+            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>PDF</span></a></li>
           </ul>
         </li>
         
+        <!--<i class="fa-solid fa-file-pdf"></i>-->
+
         <li class="cd-accordion__item cd-accordion__item--has-children">
           <input class="cd-accordion__input" type="checkbox" name ="sub-group-2" id="sub-group-2">
-          <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-2"><span>Sub Group 2</span></label>
+          <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-2"><span>Subgrupo 2</span></label>
 
           <ul class="cd-accordion__sub cd-accordion__sub--l2">
             <li class="cd-accordion__item cd-accordion__item--has-children">
               <input class="cd-accordion__input" type="checkbox" name ="sub-group-level-3" id="sub-group-level-3">
-              <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-level-3"><span>Sub Group Level 3</span></label>
+              <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-level-3"><span>Subgrupo nivel 3</span></label>
 
               <ul class="cd-accordion__sub cd-accordion__sub--l3">
-                <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
-                <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
+                <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>PDF</span></a></li>
+                <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>PDF</span></a></li>
               </ul>
             </li>
-            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
+            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>PDF</span></a></li>
           </ul>
         </li>
-        <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
-        <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
-      </ul>
-    </li>
-
-    <li class="cd-accordion__item cd-accordion__item--has-children">
-      <input class="cd-accordion__input" type="checkbox" name ="group-2" id="group-2">
-      <label class="cd-accordion__label cd-accordion__label--icon-folder" for="group-2"><span>Prueba 2</span></label>
-
-      <ul class="cd-accordion__sub cd-accordion__sub--l1">
-        <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
-        <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
-      </ul>
-    </li>
-
-    <li class="cd-accordion__item cd-accordion__item--has-children">
-      <input class="cd-accordion__input" type="checkbox" name ="group-3" id="group-3">
-      <label class="cd-accordion__label cd-accordion__label--icon-folder" for="group-3"><span>Prueba 3</span></label>
-
-      <ul class="cd-accordion__sub cd-accordion__sub--l1">
-        <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
-        <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
+        <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>PDF</span></a></li>
+        <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>PDF</span></a></li>
       </ul>
     </li>
 
     <li class="cd-accordion__item cd-accordion__item--has-children">
       <input class="cd-accordion__input" type="checkbox" name ="group-4" id="group-4">
-      <label class="cd-accordion__label cd-accordion__label--icon-folder" for="group-4"><span>Prueba 4</span></label>
+      <label class="cd-accordion__label cd-accordion__label--icon-folder" for="group-4"><span>2022</span></label>
 
       <ul class="cd-accordion__sub cd-accordion__sub--l1">
         <li class="cd-accordion__item cd-accordion__item--has-children">
           <input class="cd-accordion__input" type="checkbox" name ="sub-group-3" id="sub-group-3">
-          <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-3"><span>Sub Group 3</span></label>
+          <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-3"><span>Subgrupo 3</span></label>
 
           <ul class="cd-accordion__sub cd-accordion__sub--l2">
-            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
-            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
+            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>PDF</span></a></li>
+            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>PDF</span></a></li>
           </ul>
         </li>
-        <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
-        <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
+        <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>PDF</span></a></li>
+        <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>PDF</span></a></li>
       </ul>
     </li>
   </ul>
@@ -225,6 +257,9 @@
     <script src="js/script.js"></script>
     <script src="assets/js/util.js"></script> 
     <script src="assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/responses.js"></script>
+    <script src="js/chat.js"></script>
 
 </body>
 </html>
