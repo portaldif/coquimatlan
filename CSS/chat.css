@@ -19,6 +19,10 @@
     border-bottom: none;
 }
 
+.collapsible:hover {
+    background-color: #6a3445;
+}
+
 .content {
     max-height: 0;
     overflow: hidden;
