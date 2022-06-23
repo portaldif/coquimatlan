@@ -121,7 +121,7 @@ button:hover{
 }
 
 .menu .text-menu-selected {
-	color: #6a3145;
+	color: #6a3445;
 }
 
 .menu nav ul li a i {
@@ -583,6 +583,7 @@ footer .redes-footer .icon-facebook:hover {
 
 	.container-all {
 		transition: all 300ms;
+
 	}
 
 	.move-container-all {
@@ -592,6 +593,7 @@ footer .redes-footer .icon-facebook:hover {
 	.header-content{
 		justify-content: space-around;
 		text-align: justify;
+		z-index: 100;
 
 	}
 
@@ -640,9 +642,19 @@ footer .redes-footer .icon-facebook:hover {
 	#icon-menu {
 		display: flex;
 		left: 6px;
+		z-index: -100;
+
 	}
 
 	#icon-menu:hover {
+		opacity: 0.8;
+	}
+
+	#ctn-icon-search {
+		z-index: -100; /*ocultar icono al mostrar el chat*/
+	}
+
+	#ctn-icon-search:hover {
 		opacity: 0.8;
 	}
 
