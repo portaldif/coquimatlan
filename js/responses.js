@@ -28,6 +28,7 @@ function getBotResponse(input) {
         input == "Servicios" ||
         input == "SERVICIOS" ||
         input == "Servicio" ||
+        input == "servicio" ||
         input == "SERVICIO") {
         return "Los servicios que contamos abarcan desde Gestión Social, Jurídico, Pensiones, Programa Alimentario, Pisocolgía hasta INAPAM. <br><br>Para más información, visite <a href=servicios.html>servicios.</a>";
     
