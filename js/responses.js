@@ -29,7 +29,7 @@ function getBotResponse(input) {
         input == "SERVICIOS" ||
         input == "Servicio" ||
         input == "SERVICIO") {
-        return "Los servicios que contamos abarcan desde Gestión Social, Jurídico, Pensiones, Programa Alimentario, Pisocolgía e INAPAM. <br><br>Para más información, visite la sección de servicios.";
+        return "Los servicios que contamos abarcan desde Gestión Social, Jurídico, Pensiones, Programa Alimentario, Pisocolgía e INAPAM. <br><br>Para más información, visite la sección de <a href=servicios.html>servicios.</a>";
     
        // agradecimientos //
     } else if (input == "Gracias por su buen servicio." ||
