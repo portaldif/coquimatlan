@@ -226,7 +226,7 @@ article {
 	background: #fff;
 	width: 100%;
 	padding: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 	box-shadow: -10px 0 20px -30px black;
 	border-radius: 6px;
 	position: relative;
@@ -241,42 +241,6 @@ article:before {
 	top: 0;
 	left: 0;
 	background: #6a3145; /*6a3145 - tinto, e7334f - rojito*/
-}
-
-article h1 {
-	margin-top: 20px;
-	font-weight: 500;
-	font-size: 40px;
-	font-weight: bold; /*titulo en negritas*/
-}
-
-article p{
-	margin-top: 20px;
-	font-size: 18px;
-	color: #3c3c3c;
-}
-
-article img {
-	width: 100%;
-	margin-top: 20px;
-}
-
-article button {
-	margin-top: 20px;
-	margin-left: 0px;
-	padding: 10px 20px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-	border-radius: 6px;
-}
-
-article li{
-	margin: 12px 0px;
-	font-weight: bold;
-	text-align: center;
-	padding: 5px 12px;
-	list-style: none; /*no mostrar los puntos al lado de cada enlace*/
 }
 
 /* Para controlar los elementos de "Section" */
@@ -659,4 +623,20 @@ footer .redes-footer .icon-facebook:hover {
 .domicilio{
 
 	font-size: 13px;
+}
+.separador-tinto{
+	width: 80%;
+	height: 7px;
+	border-left: 0 none;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 90px;
+	background-color: #12FF00;
+}
+
+.centrar-titulo-dif{
+	text-align: center;
+	font-size: 20px
+
 }
