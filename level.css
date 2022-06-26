@@ -1,0 +1,188 @@
+/* reset css */
+
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, aside, canvas, details, embed, figure, figcaption, hgroup, menu, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 99%;
+  font: Montserrat, sans-serif;
+  vertical-align: baseline;
+
+}
+
+aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+
+body { line-height: 1 }
+
+ol, ul { list-style: none }
+
+blockquote, q { quotes: none }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+/*body {
+  font: 100% "roboto", "Trebuchet MS", sans-serif;
+  background-color:transparent;
+}
+*/
+a { text-decoration: none; }
+
+/**
+ * Hidden fallback
+ */
+
+
+/**
+ * Styling navigation
+ */
+
+header-level {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 22.5rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+/**
+ * Styling top level items
+ */
+
+.nav a, .nav label {
+  display: block;
+ padding: .85rem;
+  color: #151515; /*para cambiar el color de letra*/
+  background-color: #F4F4F4;
+/*  box-shadow: inset 0 -1px #1d1d1d;
+*/  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+  /*margin: 1rem 0;*/
+  border-radius: 0.27rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav a:focus, .nav a:hover, .nav label:focus, .nav label:hover {
+  color: black;
+  background: #F5F5F5;    /*para cambiar de color el cursor */
+}
+
+.nav label { cursor: pointer; }
+
+/**
+ * Styling first level lists items 
+ */
+
+.group-list a, .group-list label {
+  padding-left: 2rem;
+  background: #E7E3E3; /*f2eeee*/          /*cambiar color de segundo nivel*/  /*#252525*/
+  /*box-shadow: inset 0 -1px #373737;*/
+   border-radius: 0.27rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.group-list a:focus, .group-list a:hover, .group-list label:focus, .group-list label:hover { background: #F5F5F5; }
+
+/**
+ * Styling second level list items
+ */
+
+.sub-group-list a, .sub-group-list label {
+  padding-left: 4rem;
+  background: #F2EEEE;     /*cambiar el color de fondo de los pdfs, 2nd level*/
+  /*box-shadow: inset 0 -1px #474747;*/
+}
+
+.sub-group-list a:focus, .sub-group-list a:hover, .sub-group-list label:focus, .sub-group-list label:hover { background: #F5F5F5; }
+
+/**
+ * Styling third level list items
+ */
+
+.sub-sub-group-list a, .sub-sub-group-list label {
+  padding-left: 6rem; /*AJUSTAR TAMAÑO PARA MOVIL*/
+  background: #F7F7F7; /*CABIAR COLOR TERCER NIVEL*/
+}
+
+.sub-sub-group-list a:focus, .sub-sub-group-list a:hover, .sub-sub-group-list label:focus, .sub-sub-group-list label:hover { background: #F5F5F5; }
+
+/**
+ * Styling fourth level list items
+ */
+
+.sub-sub-sub-group-list a, .sub-sub-sub-group-list label {
+  padding-left: 8rem; /*AJUSTAR TAMAÑO PARA MOVIL*/
+  background: #F2EEEE; /*CABIAR COLOR CUARTO NIVEL*/
+}
+
+.sub-sub-sub-group-list a:focus, .sub-sub-sub-group-list a:hover, .sub-sub-sub-group-list label:focus, .sub-sub-sub-group-list label:hover { background: #F5F5F5; }
+
+/**
+ * Styling fifth level list items
+ */
+
+.sub-sub-sub-sub-group-list a, .sub-sub-sub-sub-group-list label {
+  padding-left: 10rem; /*AJUSTAR TAMAÑO PARA MOVIL*/
+  background: #F2EEEE; /*CABIAR COLOR TERCER NIVEL (PDF'S)*/
+}
+
+.sub-sub-sub-sub-group-list a:focus, .sub-sub-sub-sub-group-list a:hover, .sub-sub-sub-sub-group-list label:focus, .sub-sub-sub-sub-group-list label:hover { background: #F5F5F5; }
+
+/**
+ * Styling sixth level list items
+ */
+
+.sub-sub-sub-sub-sub-group-list a, .sub-sub-sub-sub-sub-group-list label {
+  padding-left: 12rem; /*AJUSTAR TAMAÑO PARA MOVIL*/
+  background: #F7F7F7; /*CABIAR COLOR TERCER NIVEL (PDF'S)*/
+}
+
+.sub-sub-sub-sub-sub-group-list a:focus, .sub-sub-sub-sub-sub-group-list a:hover, .sub-sub-sub-sub-sub-group-list label:focus, .sub-sub-sub-sub-sub-group-list label:hover { background: #F5F5F5; }
+
+/**
+ * Hide nested lists
+ */
+
+.group-list, .sub-group-list, .sub-sub-group-list,  .sub-sub-sub-group-list, .sub-sub-sub-sub-group-list, .sub-sub-sub-sub-sub-group-list {
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0s ease-in-out;
+  transition: max-height 0s ease-in-out;
+}
+
+.nav__list input[type=checkbox]:checked + label + ul { /* restablecer la altura cuando se marca la casilla de verificación */
+max-height: 100%; }
+
+/**
+ * Rotating chevron icon
+ */
+
+label > span {
+  float: right;
+  -webkit-transition: -webkit-transform .65s ease;
+  transition: transform .65s ease;
+}
+
+.nav__list input[type=checkbox]:checked + label > span {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.centrar-level{
+  
+  align-content: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: none;
+
+}
