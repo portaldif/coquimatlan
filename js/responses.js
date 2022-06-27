@@ -80,15 +80,28 @@ function getBotResponse(input) {
         input == "por donde queda dif") {
         return "El DIF de Coquimatlán se encuentra en: <br><br> Hidalgo S/N, Centro. C.P. 28400, Coquimatlán, Colima, México. Quedámos a sus órdenes &#128578       ";
 
+  // transparencia //
+    } else if (input == "transparencia" ||
+        input == "Transparencia" ||
+        input == "TRANSPARENCIA" ||
+        input == "fracciones" ||
+        input == "archivos" ||
+        input == "transparencia dif" ||
+        input == "transparencia de dif" ||
+        input == "documentos" ||
+        input == "articulo 29" ||
+        input == "Articulos") {
+        return "Para ver la documentacion completa, visite <a href=transparencia.html>transparencia</a>. ";
+
         // ayuda //
     } else if (input == "ayuda" ||
         input == "AYUDA" ||
         input == "Ayuda" ||
         input == "palabras clave") {
-        return "<b>[Revisando]...</b> Intente probar con alguna de las siguiente palabras clave: <br><br> <b>horario</b> <br> <b>servicios</b> <br> <b>domicilio</b>"
+        return "<b>[Revisando]...</b> Intente probar con alguna de las siguiente palabras clave: <br><br> <b>horario</b> <br> <b>servicios</b> <br> <b>domicilio</b> <br> <b>transparencia</b>"
 
     } else {
-        return "Sin resultados... &#129300   Para ver los comandos, escriba la palabra <b>ayuda</b>."
+        return "Sin resultados... &#129300   Para ver los comandos, escriba la palabra <b>ayuda</b>"
     }
 
 
