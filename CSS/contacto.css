@@ -10,11 +10,11 @@ body {
 
 .container-contact {
     max-width: 1200px;
-    margin: auto;
-    margin-top: 25px;
-    display: flex;
-    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding:1.5em;
     justify-content: space-between; /* ajustar el encabezado al contenido de los articulos*/
+    position: relative;
 }
 
 ul {
