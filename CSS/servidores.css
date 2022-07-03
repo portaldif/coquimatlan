@@ -284,7 +284,8 @@ body {
 @media screen and (max-width: 1020px) {
 	
 	.container-content-cards{
-		display: none;
+            width: 100%;
+            flex-direction: column;
 	}
 
 }
