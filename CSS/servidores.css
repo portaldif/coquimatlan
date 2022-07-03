@@ -42,7 +42,7 @@ body {
     display: block;
     margin: auto;
     position: relative;
-    top: 10px;
+    top: 0;
     z-index: 1;
     filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
 }
@@ -90,6 +90,138 @@ body {
     background-image: url(../images/fondo-dif.png);
 }
 
+.card:nth-of-type(9) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(10) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(11) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(12) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(13) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(14) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(15) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(16) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(17) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(18) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(19) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(20) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(21) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(22) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(23) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(24) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(25) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(26) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(27) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(28) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(29) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(30) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(31) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(32) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(33) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(34) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(35) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(36) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(37) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(38) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(39) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(40) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(41) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
 .card:hover .img__back{
     bottom: -40px;
 }
@@ -105,14 +237,15 @@ body {
 
 }
 
-.card .description h2{
+.card .description h3{
     margin-top: 10px;
     text-align: center;
 }
 
 .card .description p{
     margin-top: 10px;
-    text-align: justify;
+    text-align: center;
+    font-size: medium;
 }
 
 .card .description input{
@@ -129,4 +262,41 @@ body {
 
 .card .description input:hover{
     background: #83277b;
+}
+
+.container-content-cards{
+    width: 1200px;
+	margin: auto;
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	text-align: justify; /*  ju */
+}
+
+@media screen and (max-width: 1220px) {
+	
+	.container-content-cards {
+		max-width: 1200px;
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	
+	.container-content-cards{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 938px) {
+
+    .container__cards{
+        display: none;
+
+    }
+
+    .container-content-cards {
+        display: none;
+    }
 }
