@@ -677,16 +677,6 @@ footer .redes-footer .icon-facebook:hover {
 	text-align: center;
 }
 
-#dark {
-	background: #343DB5B;
-	border-radius: 1000px;
-	border: none;
-	position: relative;
-	cursor; pointer;
-	display: flex;
-	outline: none;
-}
-
 .span {
 	   width: 30px;
 	   height: 30px;
