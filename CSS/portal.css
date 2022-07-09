@@ -169,7 +169,7 @@ input[type="radio"]{ /*escrito junto, para ocultar los 'radio'*/
 
 /*Sistema de filtrado*/
 
-[value="TODOS"]:checked ~ .posts .post:[data-category]{ 
+[value="TODOS"]:checked ~ .posts .post [data-category]{ 
 	display: block;
 }
 

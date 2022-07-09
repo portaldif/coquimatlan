@@ -222,6 +222,46 @@ body {
     background-image: url(../images/fondo-dif.png);
 }
 
+.card:nth-of-type(42) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(43) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(44) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(45) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(46) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(47) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(48) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(49) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(50) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
+.card:nth-of-type(51) .img__back{
+    background-image: url(../images/fondo-dif.png);
+}
+
 .card:hover .img__back{
     bottom: -40px;
 }
