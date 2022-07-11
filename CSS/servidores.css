@@ -330,7 +330,7 @@ body {
 
 }
 
-@media screen and (max-width: 938px) {
+/*@media screen and (max-width: 938px) {
 
     .container__cards{
         display: none;
@@ -340,4 +340,4 @@ body {
     .container-content-cards {
         display: none;
     }
-}
+}*/
