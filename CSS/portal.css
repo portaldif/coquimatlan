@@ -156,7 +156,7 @@ input[type="radio"]{ /*escrito junto, para ocultar los 'radio'*/
 	margin-left: 20px;
 	padding: 10px 50px;
 	font-size: 16px;
-	background: #e3443f;
+	background: #e7334f;/*#e3443f;*/
 	color: #fff;
 	border: none;
 	cursor: pointer;
@@ -164,7 +164,9 @@ input[type="radio"]{ /*escrito junto, para ocultar los 'radio'*/
 }
 
 .post button:hover {
-	opacity: 0.9;
+	background-color: #A32844;
+	transition: color 600ms;
+	/*opacity: 0.9;*/
 }
 
 /*Sistema de filtrado*/
@@ -188,7 +190,7 @@ input[type="radio"]{ /*escrito junto, para ocultar los 'radio'*/
 [value="Comunidad"]:checked ~ .container-category [for="Comunidad"],
 [value="Sociales"]:checked ~ .container-category [for="Sociales"]{
 
-	background: #e3443f;
+	background: #e7334f;/*#e3443f;*/
 	color: #fff;
 }
 
@@ -208,6 +210,10 @@ input[type="radio"]{ /*escrito junto, para ocultar los 'radio'*/
 
 @media screen and (max-width: 540px) {
 	.posts {
+		border-radius: 6px;
+		margin: auto;
+		padding-bottom: 20px;
 		grid-template-columns: repeat(1, 1fr);
+
 	}
 }
