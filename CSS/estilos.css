@@ -347,6 +347,11 @@ article li{
 	padding: 0px 20px;
 }
 
+.container-aside aside h3 {
+	margin-top: 10px;
+	padding: 0px 10px;
+}
+
 .container-aside aside button {
 	margin-top: 20px;
 	margin-left: 20px;

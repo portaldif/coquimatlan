@@ -1,13 +1,23 @@
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
+.mySlides-ads {display: none;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
+  overflow: hidden;
   margin: auto;
+}
+
+.slideshow-container-ads {
+  max-width: 1000px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  cursor: pointer;
 }
 
 /* Caption text */
@@ -31,7 +41,8 @@ img {vertical-align: middle;}
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot,
+.dots {
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -41,12 +52,14 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active {
+.active,
+.active-ads {
   background-color: #717171;
 }
 
 /* Fading animation */
-.fade {
+.fade,
+.fade-ads {
   animation-name: fade;
   animation-duration: 1.5s;
 }
