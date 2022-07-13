@@ -527,7 +527,7 @@ article li{
 }
 
 /* ------- Modo noche / icono del buscador ------- */
-#ctn-icon-search i:hover {
+.dark #ctn-icon-search i:hover {
 	color: white;
 }
 /* ------- termina Modo noche / icono del buscador ------- */
