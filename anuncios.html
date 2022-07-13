@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+	<title>Anuncios DIF Coquimatlan</title>
+
+	<script src="https://kit.fontawesome.com/fa5938459a.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<link rel="icon" href="Imagenes/dif-logo.png">
+
+	<link rel="stylesheet" href="CSS/article.css"> <!--cover visible-->
+	<link rel="stylesheet" href="../CSS/slide.css">
+    <link rel="stylesheet" href="cal-fb.css">
+
+    <link rel="stylesheet" href="../CSS/chat.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+	<!-- Header + menu -->
+	<header>
+		 <!-- encabezado -->
+		<div class="header-content">
+			<a href="../index.html">
+				<h1><img class="logo" src="Imagenes/dif-logo.png"></h1>
+			</a>
+		
+		<div class="menu" id="show-menu">
+			<nav>
+				<ul>
+					<li><a href="../index.html"> <i class="fa-solid fa-house-chimney"></i> Inicio</a></li>
+					<li><a href="../portal.html"><i class="fa-solid fa-newspaper"></i> Portal</a></li>
+					<li><a href="gobierno.html" ><i class="fa-solid fa-users-line"></i> Gobierno</a></li>
+					<li><a href="../index.html#contacto"> <i class="fa-solid fa-address-book"></i> Contacto</a></li>
+					<li><a href="../servicios.html"> <i class="fa-solid fa-screwdriver-wrench"></i> Servicios</a></li>
+					<li><a href="../transparencia.html"> <i class="fa-solid fa-eye"></i> Transparencia</a></li>
+				</ul>
+			</nav>
+		</div>
+
+										<!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">DIF Coquimatlán está en línea            
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-solid fa-message"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Escribe tu mensaje aquí...">
+                                <p></p>
+                            </div>
+
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: #A32844;" class="fa-solid fa-thumbs-up"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                        	<p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div> <!--end-->
+        </div>
+
+    </div>
+
+		<div id="ctn-icon-search">
+			<i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+		</div>
+
+		<div id="icon-menu">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+
+		</div> <!--fin header-content-->
+
+
+	</header>
+
+<!-- div que maneja el buscador -->
+
+	<div id="ctn-bars-search">
+		<input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+	</div>
+
+	<ul id="box-search">
+		<li><a href="articulo-01.html"><i class="fa-solid fa-magnifying-glass"></i>Dia mundial sin tabaco</a></li>
+	</ul>
+
+	<div id="cover-ctn-search"></div>
+
+	<!-- Portada -->
+
+	<div class="container-all" id="move-content">
+
+	<div class="container-cover">
+		<div class="container-info-cover">
+
+			<h1>Anuncios DIF Municipal Coquimatlán</h1>
+			<!--<form action="#">
+				<button></button>
+			</form>-->
+		</div>
+	</div>
+
+	<div class="container-content">
+		<article>
+
+			<h2>Jornada Estatal de Reforestación</h2>
+
+			<br>
+
+			<!--imagenes de la nota-->
+
+
+                		<img src="Imagenes/anuncios/sembrando-esperanzajpg.jpg" style="width:100%">
+
+                <br>
+
+                <p>¡Hoy corresponde a Coquimatlán, acompañanos hoy a reforestar espacios en nuestro municipio y Sembremos Esperanza! 
+                    <br><br>Los esperamos en la Unidad Sur de la Colonia Las Moras a las 11:00 am<br>
+                    <br>¡No faltes!
+                </p>
+
+		</article>
+
+		<div class="container-aside">
+			<aside>
+                <img loading="lazy" src="Imagenes/anuncios/vacuna-pediátrica.jpg" alt="">
+
+                <h2>Llegan más unidades de vacuna pediátrica contra #Covid.</h2>
+    
+                <p>Para niñas y niños de 5 a 11 años, asiste hoy y el día de mañana a la vacunación contra Covid-19. <br> A tu centro más cercano: <br>
+                    <br>Auditorio de la Casa de la Cultura
+                    <br>Junta Municipal de Pueblo Juárez</p>
+			</aside>
+    	</div>
+    </div>
+
+	<div class="container-content">
+		<article>
+
+			<h2>El Hurracan #Bonnie ya es categoria 3 en la escala Saffir-Simpson⛈</h2>
+
+			<br>
+
+			<!--imagenes de la nota-->
+
+
+                		<img src="Imagenes/anuncios/huracan-bonnie.jpg" style="width:100%">
+
+                <br>
+
+                <p>De acuerdo a los reportes del Sistema Meteorológico Nacional, solicitamos estar atentos ante los posibles efectos que pueda causar a su paso; se esperan lluvias para toda la entidad durante la tarde y noche de este día.
+                    <br><br>Tome sus precauciones. Haz caso de las indicaciones de Protección Civil Coquimatlán, Colima, México.
+                </p>
+
+		</article>
+
+		<div class="container-aside">
+			<aside>
+                <img loading="lazy" src="Imagenes/anuncios/pfizer.jpg" alt="">
+
+                <h2>Vacunación COVID para menores</h2>
+    
+                <p>Asiste este martes 12 y miércoles 13 de julio a la Casa de la Cultura y a la Junta Municipal de Pueblo Juárez
+                    <br><br>Se aplicara a niños y niñas de 5 a 11 años la primera dosis de vacuna #Pfizer en nuestro el municipio de 12:00pm a 7:00pm.</p>
+			</aside>
+    	</div>
+    </div>
+
+    <div id="button-up"> <!-- id para utilizarlo en script js -->
+		<i class="fa-solid fa-chevron-up"></i>
+	</div>
+
+    <div class="container-footer">
+    	
+    	<footer>
+    		<div class="logo-footer">
+    			<img alt="Coquimatlán" class="img-fluid" src="Imagenes/dif-logo.png">
+    		</div>
+    		
+    		<div class="redes-footer">
+    			<a href="https://www.facebook.com/people/DIF-Municipal-Coquimatl%C3%A1n/100076215756413/" target="_blank" rel="noopener noreferrer"><i class="icon-facebook icon-redes-footer"></i></a>
+
+    		</div>
+
+    		<hr>
+    		<h4>Hidalgo S/N, Centro. C.P. 28400, Coquimatlán, Colima, México. Tel. (312) 323 0018</h4>
+    	</footer>
+    </div>
+</div>
+
+    <script src="js/script.js"></script>
+    <script src="../js/slide.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/responses.js"></script>
+    <script src="../js/chat.js"></script>
+
+</body>
+</html>
