@@ -754,6 +754,11 @@ footer .redes-footer .icon-facebook:hover {
 	.container-aside {
 		flex-wrap: wrap;
 	}
+
+	#modo {
+		margin: 0; 
+		margin-top: 40px; /*poner texto al lado de los iconos*/
+	}
 }
 
 .mes-noticia-principal {
