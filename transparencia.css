@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #f6f6f6;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background: #f7f7f7;
+	box-shadow: 0 4px 25px -22px black;
+	z-index: 10;
+
+}
+
+button{
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 10px;
+	border: 0.3px solid rgba(0, 0, 0, 0.3);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	color: #fff;
+	background-color: #e7334f;
+	cursor: pointer;
+	transition: col 18px;
+}
+
+button:hover{
+	background-color: #A32844;
+	transition: color 600ms;
+
+}
+.header-content {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-between; /* ajustar el encabezado al contenido de los articulos*/
+	position: relative;
+
+}
+
+.logo {
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    transition: all 0.3s;
+
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    
+}
+
+.menu {
+	height: 80px;
+	margin-right: 60px;
+}
+
+.menu nav {
+	height: 100%;
+}
+
+.menu nav ul {
+	height: 100%;
+	display: flex;
+	list-style: none;
+}
+
+.menu nav ul li {
+	height: 100%;
+	margin: 0px 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	font-weight: bold;
+}
+
+.menu-selected:before {
+	content: '';
+	width: 100%;
+	height: 4px;
+	background: #6a3445;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.menu nav ul li a{
+	color: #e7334f;
+	font-size: 16px;
+	transition: col 18px;
+}
+
+.menu nav ul li a:hover {
+	color: #6a3145;
+	transition: color 300ms;
+
+}
+
+.menu .text-menu-selected {
+	color: #6a3145;
+}
+
+.menu nav ul li a i {
+	display: none;
+}
+
+#icon-menu {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 20px;
+	top: 16px;
+	position: 10px;
+	font-size: 20px;
+	opacity: 80%;
+	border-radius: 100%;
+	color: #6a3145;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	display: none; /*no mostrar para pantalla grande*/
+}
+
+#icon-menu:hover {
+	opacity: 0.8;
+}
+
+.color-acento{ color: #6a3145; }
+
+/*Portada*/
+
+.container-cover {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	margin-top: 80px;
+	background-image: url(../Imagenes/Coquimatlan.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container-cover:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+    background: rgba(25, 0, 0, 0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.container-info-cover {
+	max-width: 800px;
+	height: 500px;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+}
+
+.container-info-cover h1 {
+	font-size: 50px;
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px black;
+}
+
+.container-info-cover p {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300px;
+}
+
+.container-info-cover button {
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+/*Contenedor que contiene el contenido del artículo*/
+
+.container-content { /*aqui modifiquue*/
+	width: 1200px;
+	margin: auto;
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	text-align: justify; /*  ju */
+}
+
+article {
+	background: #fff;
+	width: 100%;
+	padding: 20px;
+	padding-bottom: 10px;
+	box-shadow: -10px 0 20px -30px black;
+	border-radius: 6px;
+	position: relative;
+	overflow: hidden;
+}
+
+article:before {
+	content: '';
+	width: 100%;
+	height: 6px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #6a3145; /*6a3145 - tinto, e7334f - rojito*/
+}
+
+/* Para controlar los elementos de "Section" */
+
+#servicios .container-content {
+	text-align: center;
+	padding: 20px 12px;
+	transition: col 18px;
+	cursor: pointer;
+}
+
+#servicios li{
+	margin: 12px 0px;
+	font-weight: bold;
+}
+
+#servicios a{
+	color: black;
+	margin: 12px 0px;
+	font-weight: bold;
+}
+
+#servicios a:hover {
+	color: #e7334f;
+	transition: color 300ms;
+}
+
+/*Aside de los artículos relacionados*/
+
+.container-aside aside {
+	background: #fff;
+	width: 320px;
+	box-shadow: 0 0 20px -20px black;
+	border-radius: 6px;
+	overflow: hidden;
+	margin-left: 90px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+
+}
+
+.container-aside aside img{
+	width: 100%;
+}
+
+.container-aside aside h2,
+.container-aside aside h1,
+.container-aside aside h4,
+.container-aside aside p{
+	margin-top: 20px;
+	padding: 0px 20px;
+}
+
+.container-aside aside button {
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+.container-aside aside button:hover {
+	opacity: 0,9;
+}
+
+/* botón de ir arriba */
+
+#button-up {
+	width: 60px;
+	height: 60px;
+	background: #6a3445;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 20px;
+	position: fixed;
+	bottom: 50px;
+	right: 20px;
+	cursor: pointer;
+	border: 4px solid transparent;
+	transition: all 300ms ease;
+	transform: scale(0);
+}
+
+#button-up:hover {
+	transform: scale(1.1);
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Buscador de contenido */
+
+#ctn-icon-search{
+	position: absolute;
+	right: 20px;
+	height: 100%;
+	display: flex;
+	justify-content: centet;
+	align-items: center;
+}
+
+#ctn-icon-search i {
+	font-size: 18px;
+	color: #e7334f;
+	cursor: pointer;
+	transition: all 300ms;
+}
+
+#ctn-icon-search i:hover {
+	color: #6a3145;
+}
+
+/**/
+
+#ctn-bars-search {
+	position: fixed;
+	top: -10px;
+	width: 100%;
+	background: #fff;
+	padding: 20px;
+	z-index: 9;
+	transition: all 600ms;
+}
+
+#ctn-bars-search input {
+	display: block;
+	width: 1200px;
+	margin: auto;
+	padding: 10px;
+	font-size: 18px;
+	outline: 0;
+}
+
+#box-search {
+	position: fixed;
+	top: 165px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1200px;
+	background: #fff;
+	z-index: 8;
+	overflow: hidden;
+	display: none;
+}
+
+#box-search li a {
+	display: block;
+	width: 1200px;
+	color: #777777;
+	padding: 10px 20px;
+}
+
+#box-search li a:hover {
+	background: #f3f3f3;
+}
+
+#box-search li a i {
+	margin-right: 10px;
+	color: #777777;
+}
+
+#cover-ctn-search {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 7;
+	display: none;
+}
+
+/* Modo noche */
+#modo{
+    width: 30px;
+    font-size: 30px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.dark {
+	background: #181717;
+}
+
+.dark .header-all,
+.dark .menu {
+	background: #181717;
+}
+
+.dark .text-menu-selected {
+	color: white;
+}
+
+.dark .container-content-article,
+.dark .contact-form,
+.dark .container-footer,
+.dark .container-aside-mode {
+	background: rgb(19, 18, 18);
+}
+
+.dark #chat-timestamp,
+.dark #textInput,
+.dark .color-acento {
+	color: #fff;
+}
+
+.dark .container-category label,
+.dark .ctn-tag li {
+	background: #e8e8e8;
+}
+
+.dark .posts .post {
+	background: rgb(19, 18, 18);
+	box-shadow: 0 0 20px -20px black;
+}
+
+.dark .full-chat-block {
+    background: #181717;
+}
+
+.dark .chat-bar-input-block {
+    background-color: rgb(19, 18, 18);
+}
+
+.dark .botText span {
+    background: rgb(19, 18, 18);
+}
+
+.dark .input-box {
+    color: #000;
+    background-color: #181717;
+}
+
+.dark #servicios {
+	background: rgb(19, 18, 18);
+}
+
+.dark h2,
+.dark h1,
+.dark h3,
+.dark p,
+.dark .label-servicios,
+.dark #servicios a {
+	color: white;
+}
+
+/* ------- Modo noche / icono del buscador ------- */
+.dark #ctn-icon-search i:hover {
+	color: white;
+}
+/* ------- termina Modo noche / icono del buscador ------- */
+
+/* ------- Modo noche / menu de opciones ------- */
+
+.dark .menu nav ul li a:hover {
+	color: white;
+}
+/* ------- termina Modo noche / menu de opciones ------- */
+
+/* ------- Modo noche / Buscador ------- */
+.dark #ctn-bars-search { /*padre*/
+	background: #181717;
+}
+
+.dark #ctn-bars-search input { /*hijo*/
+	background: rgb(19, 18, 18);
+	color: white;
+}
+/* ------- termina Modo noche / Buscador ------- */
+
+.dark #servicios a:hover {
+	color: #e7334f;
+	transition: 300ms;
+}
+
+#modo {
+	color: #6a3445;
+}
+
+.dark #modo{
+    color: orange;
+}
+
+.dark #icon-menu {
+	color: white;
+}
+
+
+
+
+/* Pie de página */
+
+.container-footer {
+	width: 100%;
+	padding: 40px 0;
+	background: #fff;
+	margin-top: 40px;
+}
+
+.container-footer footer {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.container-footer footer .logo-footer {
+	text-align: center;
+}
+
+.container-footer footer .logo-footer img {
+	width: 250px;
+}
+
+.container-footer footer .redes-footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer {
+	font-size: 20px;
+	margin: 20px;
+	background: #efefef;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	color: #a2a2a2;
+}
+
+footer .redes-footer .icon-facebook:hover {
+	background: #41579a;
+	color: #fff;
+}
+
+.container-footer footer hr {
+	margin-top: 20px;
+	border: none;
+	height: 2px;
+	background: #6a3145;
+}
+
+.container-footer footer h4 {
+	text-align: center;
+	margin-top: 40px;
+	color: #8e8e8e;
+	font-weight: 500;
+
+}
+
+/* Responsive Design - adaptable a dispositivos móviles*/
+
+@media screen and (max-width: 1220px) {
+	
+	.header-content,
+	.container-content,
+	.container-footer footer {
+		max-width: 1000px;
+		padding: 0 20px;
+	}
+
+	#ctn-bars-search,
+	#ctn-bars-search input,
+	#box-search {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	
+	.container-content{
+		width: 100%;
+		flex-direction: column;
+	}
+
+	article {
+		box-shadow: 0 0 0 0;
+	}
+
+	.container-aside {
+		display: flex;
+		justify-content: center;
+	}
+
+	.container-aside aside {
+		max-width: 300px;
+		margin: 10px;
+	}
+
+}
+
+@media screen and (max-width: 938px) {
+
+	.container-all {
+		transition: all 300ms;
+
+	}
+
+	.move-container-all {
+		transform: translateX(300px);
+	}
+	
+	.header-content{
+		justify-content: space-around;
+		text-align: justify;
+		z-index: 100;
+
+	}
+
+	.menu{
+		width: 0px;
+		height: 100vh;
+		position: fixed;
+		top: 80px;
+		left: 0;
+		background: #f7f7f7;
+		overflow: hidden;
+		transform: translateX(-350px);
+		box-shadow: 10px 0 20px -25px black;
+		transition: all 300ms cubic-bezier(1,0,0,1);
+	}
+
+	.show-lateral {
+		width: 300px;
+		transform: translateX(0px);
+	}
+
+	.menu nav ul {
+		flex-direction: column;
+	}
+
+	.menu nav ul li {
+		max-width: 200px;
+		height: 50px;
+		justify-content: flex-start;
+	}
+
+	.menu-selected:before {
+		width: 0;
+	}
+
+	.menu nav ul li a{
+		margin-top: 40px; /*poner texto al lado de los iconos*/
+	}
+
+	.menu nav ul li a i{
+		width: 20px;
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	#icon-menu {
+		display: flex;
+		left: 6px;
+		z-index: -100;
+
+	}
+
+	#icon-menu:hover {
+		opacity: 0.8;
+	}
+
+	#ctn-icon-search {
+		z-index: -100; /*ocultar icono al mostrar el chat*/
+	}
+
+	#ctn-icon-search:hover {
+		opacity: 0.8;
+	}
+
+	.container-aside {
+		flex-wrap: wrap;
+	}
+}
+
+.mes-noticia-principal {
+    color: #A32844;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: Montserrat;
+
+}
+
+.centrar-servicios{
+
+	text-align: center;
+}
+
+.text-success {
+    color: #02B700;
+}
+.domicilio{
+
+	font-size: 13px;
+}
+.separador-tinto{
+	width: 80%;
+	height: 7px;
+	border-left: 0 none;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 90px;
+	background-color: #12FF00;
+}
+
+.centrar-titulo-dif{
+	text-align: center;
+	font-size: 20px
+
+}
