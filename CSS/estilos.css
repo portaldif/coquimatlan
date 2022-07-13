@@ -337,6 +337,7 @@ article li{
 
 .container-aside aside img{
 	width: 100%;
+	cursor: pointer;
 }
 
 .container-aside aside h2,
