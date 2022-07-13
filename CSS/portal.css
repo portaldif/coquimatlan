@@ -148,6 +148,7 @@ input[type="radio"]{ /*escrito junto, para ocultar los 'radio'*/
 	margin: 4px;
 	padding: 6px 10px;
 	background: #e8e8e8;
+	border-radius: 5px;
 	cursor: default;
 }
 

@@ -277,9 +277,22 @@ body {
 
 }
 
+.dark .card .description{
+    background: rgb(26, 24, 24);
+    box-shadow: 0px 4px 25px -22px black;
+}
+
 .card .description h3{
     margin-top: 10px;
     text-align: center;
+}
+
+.dark .card .description h2{
+    color: white;
+}
+
+.dark .card .description h3{
+    color: #e7334f;
 }
 
 .card .description p{

@@ -11,20 +11,20 @@
 	
 	<link rel="icon" href="Imagenes/dif-logo.png">
 
-	<link rel="stylesheet" href="CSS/article.css"> <!--cover visible-->
+    <link rel="stylesheet" href="CSS/article.css">
 	<link rel="stylesheet" href="CSS/slide.css">
-        <link rel="stylesheet" href="cal-fb.css">
+    <link rel="stylesheet" href="cal-fb.css">
 
-        <link rel="stylesheet" href="CSS/chat.css">
-        <link rel="stylesheet" href="CSS/home.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/chat.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
 <body>
 
 	<!-- Header + menu -->
-	<header>
+	<header class="header-all">
 		 <!-- encabezado -->
 		<div class="header-content">
 			<a href="index.html">
@@ -40,6 +40,11 @@
 					<li><a href="index.html#contacto"> <i class="fa-solid fa-address-book"></i> Contacto</a></li>
 					<li><a href="servicios.html"> <i class="fa-solid fa-screwdriver-wrench"></i> Servicios</a></li>
 					<li><a href="transparencia.html"> <i class="fa-solid fa-eye"></i> Transparencia</a></li>
+					<li>
+						<div class="modo" id="modo">
+							<i class="fas fa-toggle-on"></i>
+						</div>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -130,11 +135,9 @@
 	</div>
 
 	<div class="container-content">
-		<article>
+		<article class="container-content-article">
 
 			<h2>Jornada Estatal de Reforestación</h2>
-
-			<br>
 
 			<!--imagenes de la nota-->
 
@@ -151,7 +154,7 @@
 		</article>
 
 		<div class="container-aside">
-			<aside>
+			<aside class="container-aside-mode">
                 <a href="Imagenes/anuncios/vacuna-pediátrica.jpg" target="_blank" rel="noopener noreferrer">
                 <img loading="lazy" src="Imagenes/anuncios/vacuna-pediátrica.jpg" alt="">
                 </a>
@@ -166,11 +169,9 @@
     </div>
 
 	<div class="container-content">
-		<article>
+		<article class="container-content-article">
 
 			<h2>El Huracán #Bonnie ya es categoria 3 en la escala Saffir-Simpson</h2>
-
-			<br>
 
 			<!--imagenes de la nota-->
 
@@ -186,7 +187,7 @@
 		</article>
 
 		<div class="container-aside">
-			<aside>
+			<aside class="container-aside-mode">
                 <a href="Imagenes/anuncios/pfizer.jpg" target="_blank" rel="noopener noreferrer">
                 <img loading="lazy" src="Imagenes/anuncios/pfizer.jpg" alt="">
                 </a>

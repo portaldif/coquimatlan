@@ -478,7 +478,125 @@ article li{
 	display: none;
 }
 
+/* Modo noche */
+#modo{
+    width: 30px;
+    font-size: 30px;
+    margin: auto;
+    cursor: pointer;
+}
 
+.dark {
+	background: #181717;
+}
+
+.dark .header-all,
+.dark .menu {
+	background: #181717;
+}
+
+.dark .text-menu-selected {
+	color: white;
+}
+
+.dark .container-content-article,
+.dark .contact-form,
+.dark .container-footer,
+.dark .container-aside-mode {
+	background: rgb(19, 18, 18);
+}
+
+.dark #chat-timestamp,
+.dark #textInput,
+.dark .color-acento {
+	color: #fff;
+}
+
+.dark .container-category label,
+.dark .ctn-tag li {
+	background: #e8e8e8;
+}
+
+.dark .posts .post {
+	background: rgb(19, 18, 18);
+	box-shadow: 0 0 20px -20px black;
+}
+
+.dark .full-chat-block {
+    background: #181717;
+}
+
+.dark .chat-bar-input-block {
+    background-color: rgb(19, 18, 18);
+}
+
+.dark .botText span {
+    background: rgb(19, 18, 18);
+}
+
+.dark .input-box {
+    color: #000;
+    background-color: #181717;
+}
+
+.dark #servicios {
+	background: rgb(19, 18, 18);
+}
+
+.dark h2,
+.dark h3,
+.dark p,
+.dark .label-servicios,
+.dark #servicios a {
+	color: white;
+}
+
+.dark #servicios a:hover {
+	color: #e7334f;
+	transition: 300ms;
+}
+
+/* ------- Modo noche / icono del buscador ------- */
+#ctn-icon-search i:hover {
+	color: white;
+}
+/* ------- termina Modo noche / icono del buscador ------- */
+
+/* ------- Modo noche / menu de opciones ------- */
+
+.dark .menu nav ul li a:hover {
+	color: white;
+}
+/* ------- termina Modo noche / menu de opciones ------- */
+
+/* ------- Modo noche / Buscador ------- */
+.dark #ctn-bars-search { /*padre*/
+	background: #181717;
+}
+
+.dark #ctn-bars-search input { /*hijo*/
+	background: rgb(19, 18, 18);
+	color: white;
+}
+/* ------- termina Modo noche / Buscador ------- */
+
+#modo {
+	color: #6a3445;
+}
+
+.dark #modo{
+    color: orange;
+}
+
+.dark #icon-menu {
+	color: white;
+}
+
+/* ------- Modo noche / fecha de publicación ------- */
+.dark .mes-noticia-principal {
+    color: #d65b77;
+}
+/* ------- termina Modo noche / fecha de publicación ------- */
 
 
 /* Pie de página */

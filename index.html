@@ -26,7 +26,7 @@
 <body>
 
 	<!-- Header + menu -->
-	<header>
+	<header class="header-all">
 		 <!-- encabezado -->
 		<div class="header-content">
 			<a href="index.html">
@@ -42,6 +42,11 @@
 					<li><a href="index.html#contacto"> <i class="fa-solid fa-address-book"></i> Contacto</a></li>
 					<li><a href="servicios.html"> <i class="fa-solid fa-screwdriver-wrench"></i> Servicios</a></li>
 					<li><a href="transparencia.html"> <i class="fa-solid fa-eye"></i> Transparencia</a></li>
+                    <li>
+                        <div class="modo" id="modo">
+                            <i class="fas fa-toggle-on"></i>
+                        </div>
+                    </li>
 				</ul>
 			</nav>
 		</div>
@@ -132,7 +137,7 @@
 	</div>
 
 	<div class="container-content">
-		<article>
+		<article class="container-content-article">
 
 				<h2><span class="color-acento">Portal de noticias</span></h2>
             
@@ -151,19 +156,19 @@
                 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
+  <div class="numbertext"></div>
   <img loading="lazy" src="detalle-noticia/Imagenes/articulos/tabaco.jpg" style="width:100%">
   
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
+  <div class="numbertext"></div>
   <img loading="lazy" src="detalle-noticia/Imagenes/articulos/tabaco.jpg" style="width:100%">
   
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
+  <div class="numbertext"></div>
   <img loading="lazy" src="detalle-noticia/Imagenes/articulos/tabaco.jpg" style="width:100%">
   
 </div>
@@ -188,7 +193,7 @@
             </article>
 
 		<div class="container-aside">
-			<aside>
+			<aside class="container-aside-mode">
                 <a href="detalle-noticia/articulo-04.html">
 				<img loading="lazy" src="detalle-noticia/Imagenes/articulos/tabaco.jpg" alt="">
                 </a>
@@ -208,7 +213,7 @@
 				<a href="detalle-noticia/articulo-04.html"><button>Leer más</button></a> <!--articulo penúltimo-->
 			</aside>
 
-			<aside>
+			<aside class="container-aside-mode">
                 <a href="detalle-noticia/articulo-03.html">
 				<img loading="lazy" src="detalle-noticia/Imagenes/articulos/tabaco.jpg" alt="">
                 </a>
@@ -233,12 +238,11 @@
 
     <!-------------------ANUNCIOS------------------->
     <div class="container-content">
-		<article>
+		<article class="container-content-article">
 
 				<h2><span class="color-acento">Anuncios</span></h2>
             
             <div class="divisor-tinto"></div>
-				<p></p>
 <!----------------------------------------------------------------------------------- -->
                 <div class="slideshow-container-ads">
 
@@ -270,7 +274,7 @@
             </article>
 
             <div class="container-aside">
-                <aside>
+                <aside class="container-aside-mode">
                     <a href="Imagenes/anuncios/vacuna-pediátrica.jpg"target="_blank" rel="noopener noreferrer">
                     <img loading="lazy" src="Imagenes/anuncios/vacuna-pediátrica.jpg" alt="">
                     </a>
@@ -325,23 +329,23 @@
                 <h3>Atención ciudadana</h3>
                 <form action="contacto.php" method="post">
                     <p>
-                        <label>Nombre</label>
+                        <label class="label-servicios">Nombre</label>
                         <input type="text" placeholder="Ingresar su nombre" id="nombre" name="nombre">
                     </p>
                     <p>
-                        <label>Correo</label>
+                        <label class="label-servicios">Correo</label>
                         <input type="email" placeholder="Ingresar un email" id="email" name="email">
                     </p>
                     <p>
-                        <label>Teléfono</label>
+                        <label class="label-servicios">Teléfono</label>
                         <input type="tel" placeholder="Teléfono" id="telefono" name="telefono">
                     </p>
                     <p>
-                        <label>Asunto</label>
+                        <label class="label-servicios">Asunto</label>
                         <input type="text" placeholder="Asunto del mensaje" name="asunto">
                     </p>
                     <p class="block">
-                       <label>Mensaje</label> 
+                       <label class="label-servicios">Mensaje</label> 
                         <textarea name="mensaje" rows="3" id="textarea" placeholder="Ingresar mensaje aqui"></textarea>
                     </p>
                     <p class="block">
@@ -372,7 +376,7 @@
 
     <div class="container-footer">
     	
-    	<footer>
+    	<footer class="container-footer-mode">
     		<div class="logo-footer">
     			<img loading="lazy" alt="Coquimatlán" class="img-fluid" src="Imagenes/dif-logo.png">
     		</div>
