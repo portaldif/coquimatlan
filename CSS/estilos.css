@@ -479,6 +479,7 @@ article li{
 }
 
 /* Modo noche */
+
 #modo{
     width: 30px;
     font-size: 30px;
@@ -660,6 +661,10 @@ footer .redes-footer .icon-facebook:hover {
 
 }
 
+.menu #modo a {
+	display: none;
+}
+
 /* Responsive Design - adaptable a dispositivos móviles*/
 
 @media screen and (max-width: 1220px) {
@@ -785,6 +790,12 @@ footer .redes-footer .icon-facebook:hover {
 	.container-aside {
 		flex-wrap: wrap;
 	}
+
+	#modo { /*ok*/
+		margin: 0; 
+		margin-top: 40px; /*poner texto al lado de los iconos*/
+	}
+
 }
 
 
