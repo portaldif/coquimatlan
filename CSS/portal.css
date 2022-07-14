@@ -114,6 +114,7 @@ input[type="radio"]{ /*escrito junto, para ocultar los 'radio'*/
 
 .post .ctn-img { /*container de la imagen*/
 	width: 100%;
+	cursor: pointer;
 }
 
 .post .ctn-img img{ /*posición de la imagen*/
