@@ -59,9 +59,8 @@ header-level {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
 }
 
-/**
- * Styling top level items
- */
+
+/* ------ carpeta 2021 / 2024 ------ */
 
 .nav a, .nav label {
   display: block;
@@ -79,12 +78,28 @@ header-level {
 
 }
 
+.dark .nav a, .dark .nav label {
+  background-color: #161616;
+  color: whitesmoke;
+}
+
 .nav a:focus, .nav a:hover, .nav label:focus, .nav label:hover {
   color: #6a3445;
   background: #F5F5F5;    /*para cambiar de color el cursor */
 }
 
+.dark .nav a:focus, .dark .nav a:hover, .dark .nav label:focus, .dark .nav label:hover {
+  color: whitesmoke;
+}
+
+.dark .nav a:focus, .dark .nav a:hover, .dark .nav label:focus, .dark .nav label:hover {
+  color: none;
+  background: #161616;
+}
+
 .nav label { cursor: pointer; }
+
+/* ------ termina: carpeta 2021 / 2024 ------ */
 
 /**
  * Styling first level lists items 
@@ -97,7 +112,16 @@ header-level {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
+.dark .group-list a, .dark .group-list label {
+  background: #282828; 
+  /*box-shadow: inset 0 -1px #373737;*/
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
 .group-list a:focus, .group-list a:hover, .group-list label:focus, .group-list label:hover { background: #F5F5F5; }
+
+.dark .group-list a:focus, .dark .group-list a:hover, .dark .group-list label:focus, .dark .group-list label:hover { background: #161616; }
+
 
 /**
  * Styling second level list items
@@ -109,15 +133,24 @@ header-level {
   /*box-shadow: inset 0 -1px #474747;*/
 }
 
+.dark .sub-group-list a, .dark .sub-group-list label {
+  background: #202020;     /*cambiar el color de fondo de las carpetas Fracción, 2nd level*/
+  /*box-shadow: inset 0 -1px #474747;*/
+}
+
 .sub-group-list a:focus, .sub-group-list a:hover, .sub-group-list label:focus, .sub-group-list label:hover { background: #F5F5F5; }
 
 /**
  * Styling third level list items
  */
 
-.sub-sub-group-list a, .sub-sub-group-list label {
+.sub-sub-group-list a, .sub-sub-group-list label { /*carpetas de las fracciones*/
   padding-left: 6rem; /*AJUSTAR TAMAÑO PARA MOVIL*/
   background: #F7F7F7; /*CABIAR COLOR TERCER NIVEL*/
+}
+
+.dark .sub-sub-group-list a, .dark .sub-sub-group-list label {
+  background: #171717; /*CABIAR COLOR TERCER NIVEL*/
 }
 
 .sub-sub-group-list a:focus, .sub-sub-group-list a:hover, .sub-sub-group-list label:focus, .sub-sub-group-list label:hover { background: #F5F5F5; }
@@ -129,6 +162,10 @@ header-level {
 .sub-sub-sub-group-list a, .sub-sub-sub-group-list label {
   padding-left: 8rem; /*AJUSTAR TAMAÑO PARA MOVIL*/
   background: #F2EEEE; /*CABIAR COLOR CUARTO NIVEL*/
+}
+
+.dark .sub-sub-sub-group-list a, .dark .sub-sub-sub-group-list label {
+  background: #141414; /*CABIAR COLOR CUARTO NIVEL*/
 }
 
 .sub-sub-sub-group-list a:focus, .sub-sub-sub-group-list a:hover, .sub-sub-sub-group-list label:focus, .sub-sub-sub-group-list label:hover { background: #F5F5F5; }
@@ -151,6 +188,10 @@ header-level {
 .sub-sub-sub-sub-sub-group-list a, .sub-sub-sub-sub-sub-group-list label {
   padding-left: 12rem; /*AJUSTAR TAMAÑO PARA MOVIL*/
   background: #F7F7F7; /*CABIAR COLOR TERCER NIVEL (PDF'S)*/
+}
+
+.dark .sub-sub-sub-sub-sub-group-list a, .dark .sub-sub-sub-sub-sub-group-list label {
+  background: #202020; /*CABIAR COLOR TERCER NIVEL (PDF'S)*/
 }
 
 .sub-sub-sub-sub-sub-group-list a:focus, .sub-sub-sub-sub-sub-group-list a:hover, .sub-sub-sub-sub-sub-group-list label:focus, .sub-sub-sub-sub-sub-group-list label:hover { background: #F5F5F5; }
