@@ -661,8 +661,29 @@ footer .redes-footer .icon-facebook:hover {
 
 }
 
+/* iconos al cambiar modo noche */
+
 .menu #modo a {
 	display: none;
+}
+
+.menu #modo .fa-sun {
+	display: none;
+}
+
+.dark .menu #modo .fa-moon {
+	display: none;
+}
+
+.dark .menu #modo .fa-sun {
+	display: flex;
+	font-size: 22px;
+	opacity: 90%;
+}
+
+.menu #modo .fa-moon {
+	display: flex;
+	font-size: 22px;
 }
 
 /* Responsive Design - adaptable a dispositivos móviles*/
