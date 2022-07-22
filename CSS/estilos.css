@@ -519,7 +519,8 @@ article li{
 
 .dark .container-category label,
 .dark .ctn-tag li {
-	background: #e8e8e8;
+	background: #262626;
+	color: white;
 }
 
 .dark .posts .post {
