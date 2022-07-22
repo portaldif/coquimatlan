@@ -108,6 +108,10 @@ button:hover{
 	left: 0;
 }
 
+.dark .menu-selected:before {
+	background: white;
+}
+
 .menu nav ul li a{
 	color: #e7334f;
 	font-size: 16px;
@@ -217,7 +221,7 @@ button:hover{
 .container-content { /*aqui modifiquue*/
 	width: 1200px;
 	margin: auto;
-	margin-top: 25px;
+	margin-top: 30px;
 	display: flex;
 	justify-content: center;
 	text-align: justify; /*  ju */
@@ -329,7 +333,7 @@ article li{
 	box-shadow: 0 0 20px -20px black;
 	border-radius: 6px;
 	overflow: hidden;
-	margin-left: 90px;
+	margin-left: 40px; /*margin al 40px*/
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 
@@ -493,7 +497,7 @@ article li{
 
 .dark .header-all,
 .dark .menu {
-	background: #181717;
+	background: #191616;
 }
 
 .dark .text-menu-selected {
@@ -667,21 +671,21 @@ footer .redes-footer .icon-facebook:hover {
 	display: none;
 }
 
-.menu #modo .fa-sun {
+.menu #modo .fa-toggle-on {
 	display: none;
 }
 
-.dark .menu #modo .fa-moon {
+.dark .menu #modo .fa-toggle-off {
 	display: none;
 }
 
-.dark .menu #modo .fa-sun {
+.dark .menu #modo .fa-toggle-on {
 	display: flex;
 	font-size: 22px;
 	opacity: 90%;
 }
 
-.menu #modo .fa-moon {
+.menu #modo .fa-toggle-off {
 	display: flex;
 	font-size: 22px;
 }
