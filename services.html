@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+	<title>Servicios de DIF</title>
+
+	<script src="https://kit.fontawesome.com/fa5938459a.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<link rel="icon" href="Imagenes/dif-logo.png">
+
+	<link rel="stylesheet" href="CSS/servicios.css"> <!--cover visible-->
+
+  <link rel="stylesheet" href="cal-fb.css">
+  <link rel="stylesheet" href="CSS/accordion.css">
+
+  <link rel="stylesheet" href="CSS/chat.css">
+  <link rel="stylesheet" href="CSS/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+	<!-- Header + menu -->
+	<header class="header-all">
+		 <!-- encabezado -->
+		<div class="header-content">
+			<a href="index.html">
+				<h1><img class="logo" src="Imagenes/dif-logo.png"></h1>
+			</a>
+		
+		<div class="menu" id="show-menu">
+			<nav>
+				<ul>
+					<li><a href="login.html"> <i class="fa-solid fa-house-chimney"></i> Inicio</a></li>
+					<li><a href="login.html#contacto"> <i class="fa-solid fa-address-book"></i> Contacto</a></li>
+					<li class=menu-selected><a href="#" class="text-menu-selected"> <i class="fa-solid fa-screwdriver-wrench"></i> Servicios</a></li>
+          <li>
+            <div class="modo" id="modo">
+              <i class="fa-solid fa-toggle-off"></i>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </li>
+				</ul>
+			</nav>
+		</div>
+
+    <!-- CHAT BAR BLOCK -->
+
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">DIF Coquimatlán está en línea            
+            <i id="chat-icon" style="color: #53F848;" class="fa-solid fa-circle"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>... </span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Escribe tu mensaje aquí...">
+                                <p></p>
+                            </div>
+
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color:  #C23051;" class="fa-solid fa-thumbs-up"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #555;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                          <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div> <!--end-->
+        </div>
+
+    </div>
+
+		<div id="ctn-icon-search">
+			<i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+		</div>
+
+		<div id="icon-menu">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+
+		</div> <!--fin header-content-->
+
+	</header>
+
+<!-- div que maneja el buscador -->
+
+	<div id="ctn-bars-search">
+		<input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+	</div>
+
+	<ul id="box-search">
+		<li><a href="portal/articulo-01.html"><i class="fa-solid fa-magnifying-glass"></i>Dia mundial sin tabaco</a></li>
+	</ul>
+
+	<div id="cover-ctn-search"></div>
+
+	<!-- Portada -->
+
+	<div class="container-all" id="move-content">
+
+	<div class="container-cover">
+		<div class="container-info-cover">
+
+			<h1>Servicios</h1>
+			<!--<form action="../portal.html">
+				<button>Ver más artículos</button>
+			</form>-->
+		</div>
+	</div>
+
+	<div class="container-content">
+		<article class="container-content-article">
+
+			<h2 align="center">Servicios que ofrece la institución DIF de Coquimatlán</h2>
+
+			<div class="centrar-servicios">
+				<div class="accordion">
+
+<!----------------------PARTE 1----------------------------------->   
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Gestión Social
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Planes de actuación dirigidos a mejorar el bienestar y calidad de vida de los pacientes, asi como el acceso a servicios básicos.
+      </div>
+    </div>
+  </div>
+
+  <!----------------------PARTE 2-----------------------------------> 
+
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Jurídico
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Asesoría legal en materia familiar brindada a sujeto de asistencia familiar.
+      </div>
+    </div>
+  </div>
+
+  <!----------------------PARTE 3-----------------------------------> 
+
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Pensiones
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Apoyo económico mensual que se establece mediante una sentencia jurídica.
+      </div>
+    </div>
+  </div>
+
+<!----------------------PARTE 4----------------------------------->   
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Programa Alimentario
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Promoción de la nutrición y alimentación sana hacia la niñez en el municipio.
+      </div>
+    </div>
+  </div>
+<!----------------------PARTE 5-----------------------------------> 
+
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Psicología
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Estudio y valorización de emociones y situaciones interpersonales.
+      </div>
+    </div>
+  </div>
+
+<!----------------------PARTE 6-----------------------------------> 
+
+	<div class="accordion-item">
+    <div class="accordion-item-header">
+      Servicios Médicos
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Atención a la salud del paciente mediante consulta y diagnóstico preventivo.
+      </div>
+    </div>
+  </div>
+<!----------------------PARTE 7-----------------------------------> 
+
+<div class="accordion-item">
+    <div class="accordion-item-header">
+      Trabajo Social
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Disciplina con el objetivo de atención al desarrollo de las situaciones humanas en promoción al cambio social.
+      </div>
+    </div>
+  </div>
+<!----------------------PARTE 8-----------------------------------> 
+
+<div class="accordion-item">
+    <div class="accordion-item-header">
+      Unidad Básica de Rehabilitación (UBR)
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Unidad conformada por equipos básicos para la rehabilitación y el apoyo integral que los pacientes requieran.
+      </div>
+    </div>
+  </div>
+<!----------------------PARTE 9-----------------------------------> 
+	<div class="accordion-item">
+    <div class="accordion-item-header">
+      INAPAM
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Si cuentas con 60 años o más, tramita con nosotros tu credencial de INAPAM y obten descuentos en servicios.
+      </div>
+    </div>
+  </div>
+
+
+
+</div> <!-- accordion -->
+			</div>
+
+			<!--<h1>Subtitulo del artículo</h1>-->
+
+			<!--<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>-->
+
+			<!--<img src="Imagenes/articulos/tabaco.jpg" alt="">-->
+
+		</article>
+
+    	</div>
+    </div>
+
+    <div id="button-up"> <!-- id para utilizarlo en script js -->
+		<i class="fa-solid fa-chevron-up"></i>
+	</div>
+
+    <div class="container-footer">
+    	
+    	<footer>
+    		<div class="logo-footer">
+    			
+    			<img alt="Coquimatlán" class="img-fluid" src="Imagenes/dif-logo.png">
+
+    		</div>
+
+    		<div class="redes-footer">
+    			<a href="https://www.facebook.com/people/DIF-Municipal-Coquimatl%C3%A1n/100076215756413/" target="_blank" rel="noopener noreferrer"><i class="icon-facebook icon-redes-footer"></i></a>
+
+    		</div>
+
+    		<hr>
+    		
+    		<h4>Hidalgo S/N, Centro. C.P. 28400, Coquimatlán, Colima, México. Tel. (312) 323 0018</h4>
+    	
+    	</footer>
+    </div>
+   </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/acor-script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/responses.js"></script>
+    <script src="js/chat.js"></script>
+
+</body>
+</html>
