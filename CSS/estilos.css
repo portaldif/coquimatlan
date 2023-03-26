@@ -65,6 +65,7 @@ button:hover{
 	justify-content: center;
 	align-items: center;
     transition: all 0.3s;
+    text-align: center;
 
 }
 
@@ -347,8 +348,11 @@ article li{
 .container-aside aside h2,
 .container-aside aside h1,
 .container-aside aside h4,
+.container-aside aside label,
 .container-aside aside p{
-	margin-top: 20px;
+
+	display: inline-block;
+	margin-top: 10px;
 	padding: 0px 20px;
 }
 
@@ -552,6 +556,7 @@ article li{
 .dark h2,
 .dark h3,
 .dark p,
+.dark label,
 .dark .label-servicios,
 .dark #servicios a {
 	color: white;
