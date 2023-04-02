@@ -12,6 +12,7 @@
     <link rel="icon" href="Imagenes/dif-logo.png">
 
     <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/login.css">
     <link rel="stylesheet" href="CSS/contacto.css">
     <link rel="stylesheet" href="cal-fb.css">
     <link rel="stylesheet" href="CSS/slide.css">
@@ -29,7 +30,7 @@
     <header class="header-all">
          <!-- encabezado -->
         <div class="header-content">
-            <a href="index.html">
+            <a href="login.html">
                 <h1><img loading="lazy" class="logo" src="Imagenes/dif-logo.png"></h1>
             </a>
         
@@ -128,247 +129,69 @@
         <div class="container-info-cover">
 
             <h1>DIF Municipal de Coquimatlán</h1>
-            <form action="portal.html">
+            <!--<form action="login.html">
                 <button>Artículos recientes</button>
-            </form>
+            </form>-->
         </div>
     </div>
 
-    <div class="container-content">
-        <article class="container-content-article">
+    <div class="container-content-login">
+        <article class="container-content-article" id="login-portal">
 
-                <h2><span class="color-acento">Noticias</span></h2>
+                <h2><span class="color-acento">Accede al Portal DIF</span></h2>
             
             <div class="divisor-tinto"></div>
-                <p></p>
 
-                <h2>Se conmemora el día mundial sin tabaco</h2>
-
-                <p><span class="mes-noticia-principal">
-
-                    <i class="icon-calendario"></i> 
-
-                    31 mayo 2022. Coquimatlán, col.  
-                </span></p>
-<!----------------------------------------------------------------------------------- -->
-                <div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img loading="lazy" src="portal/Imagenes/articulos/tabaco.jpg" style="width:100%">
-  
+<!-- Registration form -->
+<div class="form-container">
+  <h2>Register</h2>
+  <form id="register-form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter a username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter a password" required>
+    </div>
+    <button type="submit">Register</button>
+  </form>
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img loading="lazy" src="portal/Imagenes/articulos/tabaco.jpg" style="width:100%">
-  
+<!-- Login form -->
+<div class="form-container">
+  <h2>Login</h2>
+  <form id="login-form">
+    <div class="form-group">
+      <label for="login-username">Username</label>
+      <input type="text" id="login-username" name="username" placeholder="Enter your username" required>
+    </div>
+    <div class="form-group">
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+    </div>
+    <button type="submit">Login</button>
+  </form>
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img loading="lazy" src="portal/Imagenes/articulos/tabaco.jpg" style="width:100%">
-  
-</div>
-
-</div>
+<!------------------------------------------------------------------------------------->
 <br>
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
 <!-- ------------------------------------------------------------------------------------- -->
-
-        <p>Inicia sesión o crea una cuenta para acceder a este contenido.</p>
             </article>
 
-        <div class="container-aside">
-            <aside class="container-aside-mode">
-
-                <section id="login">
-                <h2><span class="color-acento">Iniciar sesión</span></h2>
-
-                <div class="divisor-tinto"></div>
-                <p></p>
-
-            <form>
-                <label for="usuario">Usuario:</label>
-                <input type="text" id="usuario" name="usuario"><br>
-
-                <label for="contrasena">Contraseña:</label>
-                <input type="password" id="contrasena" name="contrasena"><br>
-
-                <button type="button" onclick="iniciarSesion()">Iniciar sesión</button>
-            </form>
-        </section>
-
-            </aside>
-
-            <aside class="container-aside-mode">
-
-                <section id="crearCuenta">
-                <h2><span class="color-acento">Crear cuenta nueva</span></h2>
-
-                <div class="divisor-tinto"></div>
-                <p></p>
-
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre"><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br>
-
-                <label for="nuevaContrasena">Contraseña:</label>
-                <input type="password" id="nuevaContrasena" name="nuevaContrasena"><br>
-
-                <button type="button" onclick="crearCuenta()">Crear cuenta</button>
-            </form>
-        </section>
-
-            </aside>
-
-        </div>
     </div>
-
-    <!-------------------ANUNCIOS------------------->
-
-    <div class="container-content">
-        <article class="container-content-article">
-
-            <h2><span class="color-acento">Jornada Estatal de Reforestación</span></h2>
-
-            <div class="divisor-tinto"></div>
-
-            <!--imagenes de la nota-->
-
-            <div class="slideshow-container-ads">
-
-                <div class="mySlides-ads fade-ads">
-                  <img loading="lazy" src="Imagenes/anuncios/sembrando-esperanzajpg.jpg" style="width:100%">
-                  
-                </div>
-                
-                <div class="mySlides-ads fade-ads">
-                    <img loading="lazy" src="Imagenes/anuncios/huracan-bonnie.jpg" style="width:100%">
-                    
-                  </div>
-                
-                </div>
-                <br>
-                
-                <div style="text-align:center">
-                  <span class="dots"></span> 
-                  <span class="dots"></span> 
-                </div>
-
-                <!--imagenes de la nota-->
-
-
-        </article>
-
-        <div class="container-aside">
-            <aside class="container-aside-mode">
-                <img loading="lazy" src="Imagenes/anuncios/vacuna-pediátrica.jpg" id="myImg" alt="Vacunación contra Covid-19">
-
-                <h2>Llegan más unidades de vacuna pediátrica contra #Covid.</h2>
-    
-                <p>Para niñas y niños de 5 a 11 años, asiste hoy y el día de mañana a la vacunación contra Covid-19. <br> A tu centro más cercano: <br>
-                    <br>Auditorio de la Casa de la Cultura
-                    <br>Junta Municipal de Pueblo Juárez.</p>
-            </aside>
-        </div>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-        </div>
-
-    </div>
-    <!-- termina anuncio-->
 
     <section>
-
-    <div class="container-content">
-        <article id="servicios">
-
-            <h2 align="center">
-                <span class="color-acento" id="servicios">Servicios de Colima
-                </span>
-
-            <div class="divisor-tinto"></div>
-                <p></p>
-
-            </h2>
-     <div class="centrar-servicios"> <!-- centrar -->
     
-            <ul>
-
-                <p><a href="http://validacion.col.gob.mx" target="_blank" rel="noopener noreferrer">Validación de documentos con firma electrónica</a></p>
-                <p><a href="https://www.emprender.com.mx/colima" target="_blank" rel="noopener noreferrer">Plan de digitalización MIPYME</a></p>
-                <p><a href="https://directoriointegral.col.gob.mx/v3/" target="_blank" rel="noopener noreferrer">Directorio Integral</a></p>
-
-                <ul>
-                    <a href="services.html"><button>Ver servicios de DIF Coquimatlán</button>
-                </ul></a>
-
-
-            </ul>
-                                </div>   <!-- centrar -->
-        </article>
-    </div>
-    
-    <div class="container-contact">
-
-        <h2 class="logo" id="contacto"><span>¡</span>Contáctanos<span>!</span></h2>
-
-        <div class="contact-wrapper animated bounceInUp">
-            <div class="contact-form">
-                <h3>Atención ciudadana</h3>
-                <form action="contacto.php" method="post">
-                    <p>
-                        <label class="label-servicios">Nombre</label>
-                        <input type="text" placeholder="Ingresar su nombre" id="nombre" name="nombre">
-                    </p>
-                    <p>
-                        <label class="label-servicios">Correo</label>
-                        <input type="email" placeholder="Ingresar un email" id="email" name="email">
-                    </p>
-                    <p>
-                        <label class="label-servicios">Teléfono</label>
-                        <input type="tel" placeholder="Teléfono" id="telefono" name="telefono">
-                    </p>
-                    <p>
-                        <label class="label-servicios">Asunto</label>
-                        <input type="text" placeholder="Asunto del mensaje" name="asunto">
-                    </p>
-                    <p class="block">
-                       <label class="label-servicios">Mensaje</label> 
-                        <textarea name="mensaje" rows="3" id="textarea" placeholder="Ingresar mensaje aqui"></textarea>
-                    </p>
-                    <p class="block">
-                    <button type="submit">Enviar</button>
-                </p>
-                </form>
-            </div>
-            <div class="contact-info">
-                <h4>Más información</h4>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Hidalgo S/N, Centro, 28400 Coquimatlán, Col.</li>
-                    <li><i class="fas fa-phone"></i> (+52) 312 323 0018</li>
-                    <li><i class="fas fa-envelope-open-text"></i> presicoquidif@outlook.com</li>
-                </ul>
-                <p>Nos encontramos a la orden, contáctanos a través de Facebook.</p>
-                <p>Horario: lunes a viernes de 9:00am a 03:00pm.</p>
-            </div>
-        </div>
-    </div>
-
     <!--BOTÓN DE IR HACIA ARRIBA-->
 
     <div id="button-up"> <!-- id para utilizarlo en script js -->
