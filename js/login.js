@@ -1,48 +1,63 @@
-function iniciarSesion() {
-	// Obtener los valores de usuario y contraseña ingresados por el usuario
-	var usuario = document.getElementById("usuario").value;
-	var contrasena = document.getElementById("contrasena").value;
+// Get the registration and login forms
+const registrationForm = document.querySelector('#registration-form');
+const loginForm = document.querySelector('#login-form');
 
-	// Verificar si el usuario y la contraseña son correctos (por ejemplo, si están almacenados en una base de datos)
-	// Si son correctos, mostrar el contenido y ocultar el formulario de inicio de sesión
-	// Si no son correctos, mostrar un mensaje de error al usuario
-	if (usuario == "usuario" && contrasena == "contrasena") {
-		document.getElementById("login").style.display = "none";
-		document.getElementById("crearCuenta").style.display = "none";
-		document.getElementById("contenido").style.display = "block";
-	} else {
-		alert("Usuario ha sido reconocido");
-	}
+// Get the success and error message elements
+const registrationMessage = document.querySelector('#registration-message');
+const loginMessage = document.querySelector('#login-message');
 
-	function crearCuenta() {
-	// Obtener los valores de nombre, email y contraseña ingresados por el usuario
-	var nombre = document.getElementById("nombre").value;
-	var email = document.getElementById("email").value;
-	var nuevaContrasena = document.getElementById("nuevaContrasena").value;
+// Add an event listener to the registration form
+registrationForm.addEventListener('submit', (event) => {
+  // Prevent the default form submission
+  event.preventDefault();
 
-	// Verificar si el nombre de usuario y el email están disponibles (por ejemplo, si no están ya registrados en una base de datos)
-	// Si están disponibles, crear una cuenta para el usuario y mostrar el contenido
-	// Si no están disponibles, mostrar un mensaje de error al usuario
-	if (nombre == "" || email == "" || nuevaContrasena == "") {
-		alert("Por favor complete todos los campos");
-	} else {
-		document.getElementById("login").style.display = "none";
-		document.getElementById("crearCuenta").style.display = "none";
-		document.getElementById("contenido").style.display = "block";
-	}
+  // Get the form data
+  const formData = new FormData(registrationForm);
 
-	}
-	function cerrarSesion() {
-	// Ocultar el contenido y mostrar el formulario de inicio de sesión
-	document.getElementById("contenido").style.display = "none";
-	document.getElementById("login").style.display = "block";
-	document.getElementById("crearCuenta").style.display = "block";
+  // Send the form data to the server
+  fetch('/register', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+      // Display a success message and show the login form
+      registrationForm.style.display = 'none';
+      registrationMessage.textContent = 'Registration successful. Please log in.';
+      loginForm.style.display = 'block';
+    } else {
+      // Display an error message
+      throw new Error('Registration failed.');
+    }
+  })
+  .catch(error => {
+    registrationMessage.textContent = error.message;
+  });
+});
 
-	}
-	function cerrarSesion() {
-	// Ocultar el contenido y mostrar el formulario de inicio de sesión
-	document.getElementById("contenido").style.display = "none";
-	document.getElementById("login").style.display = "block";
-	document.getElementById("crearCuenta").style.display = "block";
-}
+// Add an event listener to the login form
+loginForm.addEventListener('submit', (event) => {
+  // Prevent the default form submission
+  event.preventDefault();
 
+  // Get the form data
+  const formData = new FormData(loginForm);
+
+  // Send the form data to the server
+  fetch('/login', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+      // Redirect the user to the main page
+      window.location.href = 'index.html';
+    } else {
+      // Display an error message
+      throw new Error('Login failed.');
+    }
+  })
+  .catch(error => {
+    loginMessage.textContent = error.message;
+  });
+});
