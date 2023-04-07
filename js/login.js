@@ -1,63 +1,64 @@
-// Get the registration and login forms
-const registrationForm = document.querySelector('#registration-form');
-const loginForm = document.querySelector('#login-form');
+//Ejecutando funciones
+document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
+document.getElementById("btn__registrarse").addEventListener("click", register);
+window.addEventListener("resize", anchoPage);
 
-// Get the success and error message elements
-const registrationMessage = document.querySelector('#registration-message');
-const loginMessage = document.querySelector('#login-message');
+//Declarando variables
+var formulario_login = document.querySelector(".formulario__login");
+var formulario_register = document.querySelector(".formulario__register");
+var contenedor_login_register = document.querySelector(".contenedor__login-register");
+var caja_trasera_login = document.querySelector(".caja__trasera-login");
+var caja_trasera_register = document.querySelector(".caja__trasera-register");
 
-// Add an event listener to the registration form
-registrationForm.addEventListener('submit', (event) => {
-  // Prevent the default form submission
-  event.preventDefault();
+    //FUNCIONES
 
-  // Get the form data
-  const formData = new FormData(registrationForm);
+function anchoPage(){
 
-  // Send the form data to the server
-  fetch('/register', {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => {
-    if (response.ok) {
-      // Display a success message and show the login form
-      registrationForm.style.display = 'none';
-      registrationMessage.textContent = 'Registration successful. Please log in.';
-      loginForm.style.display = 'block';
-    } else {
-      // Display an error message
-      throw new Error('Registration failed.');
+    if (window.innerWidth > 850){
+        caja_trasera_register.style.display = "block";
+        caja_trasera_login.style.display = "block";
+    }else{
+        caja_trasera_register.style.display = "block";
+        caja_trasera_register.style.opacity = "1";
+        caja_trasera_login.style.display = "none";
+        formulario_login.style.display = "block";
+        contenedor_login_register.style.left = "0px";
+        formulario_register.style.display = "none";   
     }
-  })
-  .catch(error => {
-    registrationMessage.textContent = error.message;
-  });
-});
+}
 
-// Add an event listener to the login form
-loginForm.addEventListener('submit', (event) => {
-  // Prevent the default form submission
-  event.preventDefault();
+anchoPage();
 
-  // Get the form data
-  const formData = new FormData(loginForm);
 
-  // Send the form data to the server
-  fetch('/login', {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => {
-    if (response.ok) {
-      // Redirect the user to the main page
-      window.location.href = 'index.html';
-    } else {
-      // Display an error message
-      throw new Error('Login failed.');
+    function iniciarSesion(){
+        if (window.innerWidth > 850){
+            formulario_login.style.display = "block";
+            contenedor_login_register.style.left = "10px";
+            formulario_register.style.display = "none";
+            caja_trasera_register.style.opacity = "1";
+            caja_trasera_login.style.opacity = "0";
+        }else{
+            formulario_login.style.display = "block";
+            contenedor_login_register.style.left = "0px";
+            formulario_register.style.display = "none";
+            caja_trasera_register.style.display = "block";
+            caja_trasera_login.style.display = "none";
+        }
     }
-  })
-  .catch(error => {
-    loginMessage.textContent = error.message;
-  });
-});
+
+    function register(){
+        if (window.innerWidth > 850){
+            formulario_register.style.display = "block";
+            contenedor_login_register.style.left = "410px";
+            formulario_login.style.display = "none";
+            caja_trasera_register.style.opacity = "0";
+            caja_trasera_login.style.opacity = "1";
+        }else{
+            formulario_register.style.display = "block";
+            contenedor_login_register.style.left = "0px";
+            formulario_login.style.display = "none";
+            caja_trasera_register.style.display = "none";
+            caja_trasera_login.style.display = "block";
+            caja_trasera_login.style.opacity = "1";
+        }
+}
