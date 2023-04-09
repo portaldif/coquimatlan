@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat</title>
+
+    <link rel="stylesheet" href="CSS/registro.css">
+
+</head>
+<body>
+	<h2>Chat</h2>
+	<div id="mensajes"></div>
+	<form>
+		<input type="text" id="mensaje"><br><br>
+		<input type="submit" id="enviar" value="Enviar">
+	</form>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.0.0/jsencrypt.min.js"></script>
+	<script>
+		// Generar claves RSA
+		var encrypt = new JSEncrypt();
+		encrypt.generateKey(2048);
+
+		// Enviar mensaje encriptado al servidor
+		document.getElementById("enviar").addEventListener("click", function(event){
+			event.preventDefault();
+			var mensaje = document.getElementById("mensaje").value;
+			var mensaje_encriptado = encrypt.encrypt(mensaje);
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function(){
+				if(this.readyState == 4 && this.status == 200){
+document.getElementById("mensaje").value = "";
+}
+}
+xmlhttp.open("POST", "guardar_mensaje.php", true);
+xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xmlhttp.send("mensaje=" + mensaje_encriptado);
+});
+
+	// Cargar mensajes del servidor
+	setInterval(function(){
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function(){
+			if(this.readyState == 4 && this.status == 200){
+				var mensajes = JSON.parse(this.responseText);
+				var mensajes_desencriptados = [];
+				for(var i=0; i<mensajes.length; i++){
+					mensajes_desencriptados.push(encrypt.decrypt(mensajes[i]));
+				}
+				document.getElementById("mensajes").innerHTML = mensajes_desencriptados.join("<br>");
+			}
+		}
+		xmlhttp.open("GET", "cargar_mensajes.php", true);
+		xmlhttp.send();
+	}, 1000);
+</script>
+
+</body>
+</html>
